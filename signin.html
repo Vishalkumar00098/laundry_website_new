@@ -1,0 +1,73 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Laundry</title>
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet2.css">
+</head>
+	<body>
+		<header>
+			<div class="main">
+				<div class="logo">
+                     <h1>Laundry</h1>
+
+</div>
+</div>
+				
+			<ul>
+                 <li><a href="index1.php"> HOME </a> </li>
+			</ul>
+		</div>
+			<form action="register.php" method="POST">
+		<div class="login-box">
+			
+				<h1>Sign up</h1>
+			<div class="textbox">
+				<i class="fa fa-user" ></i>
+				<input type="text" placeholder="Username"name="n1" required="text">
+			</div>
+
+			<div class="textbox">
+				<i class="fa fa-key" ></i>
+				<input type="password" placeholder="Password"name="n2" id="myIn"required="password" maxlength="8">
+			    <span class="eye" onclick="myFunction()">
+				<i id="hide1" class="fa fa-eye"></i>
+				<i id="hide2" class="fa fa-eye-slash"></i>
+				</span>	
+
+			</div>
+			<div class="textbox">
+	        <i class="fas  fa-envelope"></i>
+				<input type="Email" placeholder="  Email"name="n3"required="Email">
+			</div>
+			<div class="textbox">
+	        <i class="fas fa-mobile-alt"></i>
+				<input type="PhoneNo" placeholder="  Phone No."name="n4"required="PhoneNo" maxlength="10">
+			</div>
+
+			<input type="submit"class="btn" type="button" name="B" value="Sign up">
+		</div>
+		<script>
+			   function myFunction(){
+                    var x=document.getElementById('myIn');
+                    var y=document.getElementById('hide1');
+                    var z=document.getElementById('hide2');
+
+                    if (x.type=='password') {
+                    	x.type="text";
+                    	y.style.display="block";
+                    	z.style.display="none";
+                    }
+                    else
+                    {
+                    	x.type="password";
+                    	y.style.display="none";
+                    	z.style.display="block";
+                    }
+			   }
+		</script>
+		</form>
+		</header>
+			
+	</body>
+</html>
